@@ -43,7 +43,6 @@ namespace Ordering.API.Controllers
             return Ok(result);
         }
 
-        // For Testing only
         [HttpPut(Name = "UpdateOrder")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -55,7 +54,6 @@ namespace Ordering.API.Controllers
             return NoContent();
         }
 
-        // For Testing only
         [HttpDelete("{id}", Name = "DeleteOrder")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
