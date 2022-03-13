@@ -58,11 +58,18 @@ services:
       context: .
       dockerfile: ApiGateways/Shopping.Aggregator/Dockerfile
 
+  shoppingwebapp:
+    image: ${DOCKER_REGISTRY-}shoppingwebapp
+    build:
+      context: .
+      dockerfile: WebApps/ShoppingWebApp/Dockerfile
+
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:
   pgadmin_data:
+
 
 
 
